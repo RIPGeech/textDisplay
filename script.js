@@ -4,7 +4,7 @@ const quotes = [
     "text",
     "text",
     "text",
-    "text",
+    "text ",
     "text"
 ];
 
