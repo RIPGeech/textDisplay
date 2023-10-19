@@ -1,23 +1,21 @@
 // quote array
 const quotes = [
-    "text1",
-    "text2",
-    "text3",
-    "text4",
-    "text5",
-    "text6"
+    "text 1",
+    "text 2",
+    "text 3",
+    
 ];
-
-// display text 
-function displayRandomText() {
-    const textContainer = document.getElementById("quote-text");
+ 
+// display random text
+function displayRandomQuote() {
+    const quoteContainer = document.getElementById("quote-text");
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    textContainer.textContent = quotes[randomIndex];
+    quoteContainer.textContent = quotes[randomIndex];
 }
-
-// load random text at page start
-window.addEventListener("load", displayRandomText)
-
+ 
+// load random text when page loads
+window.addEventListener("load", displayRandomQuote);
+ 
 // handle button click event
-const newTextButton = document.getElementById("new-text-button");
-newTextButton.addEventListener("click", displayRandomText);
+const newQuoteButton = document.getElementById("new-quote-button");
+newQuoteButton.addEventListener("click", displayRandomQuote);
